@@ -1,4 +1,3 @@
-# Laravel E-Commerce Application
 
 ## Вимоги до системи
 
