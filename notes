@@ -1,0 +1,56 @@
+slug
+make bash src which will copy all shit and do all manual jobs
+you have sql and also .php migrations 
+
+factories are used for test data and stored at database/factories
+
+
+models created in app/Http/models
+
+to create can use php artisan make:model NAME -f
+
+also gotta inject apache enabled sites root to /public
+
+to debug
+
+php artisan db:show
+php artisan route:list
+
+apt intall libicu-dev -y
+docker-php-ext-install intl -y
+
+composer require laravel/breeze --dev
+
+php artisan breeze:install blade
+
+
+php artisan make:middleware AdminMiddleware
+
+php artisan make:middleware UserMiddleware
+
+nano app/Http/Kernel.php
+
+nano app/Http/Controllers/RegisteredUserController.php
+
+php artisan make:controller Admin/DashboardController
+
+nano resources/views/admin/dashboard.blade.php
+
+nano routes/web.php
+
+nano resources/views/layouts/navigation.blade.php
+
+
+nano database/seeders/DatabaseSeeder.php
+
+php artisan db:seed
+
+php artisan session:table
+
+php artisan migrate
+
+
+npm install && npm run build
+
+
+nano app/Http/Kernel.php
