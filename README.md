@@ -9,7 +9,7 @@
 
 1. Клонувати репозиторій:
 ```bash
-git clone <repository-url>
+git clone https://github.com/nongr4t4/mcatalog
 cd mcatalog
 ```
 2. Запустити Docker контейнери:
@@ -19,7 +19,7 @@ docker-compose up -d
 
 3. Виконати міграції та seed бази даних:
 ```bash
-docker exec web php artisan migrate --seed
+docker exec web php artisan migrate:fresh --seed
 ```
 
 4. Створити symbolic link для storage:
@@ -34,9 +34,15 @@ docker exec web npm run build
 
 
 Додаток буде доступний за адресою: `http://localhost:8000`
+login: user@local.loc
+password: 12341234
+
+login: admin@local.loc
+password: 12341234
 
 PhpMyAdmin: `http://localhost:8080`
-
+login: lara_user
+password: secret
 ## Архітектура проекту
 
 ### Технологічний стек
