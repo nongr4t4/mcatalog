@@ -10,30 +10,24 @@
 1. Клонувати репозиторій:
 ```bash
 git clone <repository-url>
-cd dskur2
+cd mcatalog
 ```
-
-2. Налаштувати середовище:
-```bash
-cp cont/.env.example cont/.env
-```
-
-3. Запустити Docker контейнери:
+2. Запустити Docker контейнери:
 ```bash
 docker-compose up -d
 ```
 
-4. Виконати міграції та seed бази даних:
+3. Виконати міграції та seed бази даних:
 ```bash
 docker exec web php artisan migrate --seed
 ```
 
-5. Створити symbolic link для storage:
+4. Створити symbolic link для storage:
 ```bash
 docker exec web php artisan storage:link
 ```
 
-6. Build
+5. Build
 ```bash
 docker exec web npm run build
 ```
